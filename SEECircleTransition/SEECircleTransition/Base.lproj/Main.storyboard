@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SEECircleTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dD-xK-dJR">
+                                <rect key="frame" x="156" y="318" width="62" height="30"/>
+                                <state key="normal" title="点击动画"/>
+                                <connections>
+                                    <action selector="animationButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ny2-3e-WX0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.70588235290000001" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2dD-xK-dJR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="67p-jW-Dvr"/>
+                            <constraint firstItem="2dD-xK-dJR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u8d-Co-euO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="C8U-ts-rSr">
+            <objects>
+                <viewController storyboardIdentifier="TestViewController" id="kJA-yI-GSU" customClass="TestViewController" customModule="SEECircleTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JQo-c1-4vG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ozD-Uh-JKK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Op-Q3-MAH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="yik-70-KYp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yik-70-KYp" firstAttribute="leading" secondItem="0Op-Q3-MAH" secondAttribute="leading" id="6SD-CO-VZf"/>
+                            <constraint firstItem="yik-70-KYp" firstAttribute="top" secondItem="0Op-Q3-MAH" secondAttribute="top" id="Hho-OV-v7N"/>
+                            <constraint firstItem="yik-70-KYp" firstAttribute="bottom" secondItem="ozD-Uh-JKK" secondAttribute="top" id="PTA-Pj-JPh"/>
+                            <constraint firstAttribute="trailing" secondItem="yik-70-KYp" secondAttribute="trailing" id="wzc-1P-nUr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3XS-Iq-HKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="700" height="1244"/>
+    </resources>
+</document>
